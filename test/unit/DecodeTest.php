@@ -63,6 +63,14 @@ class DecodeTest extends PHPUnit_Framework_TestCase
                     ],
                 ]
             ],
+            [
+                'evil_string|s:5:";foo|";',
+                ['evil_string' => ';foo|'],
+            ],
+            [
+                'null|N;',
+                ['null' => null],
+            ],
         ];
     }
 }
